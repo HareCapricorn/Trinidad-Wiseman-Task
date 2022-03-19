@@ -1,0 +1,96 @@
+.wrapper {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.8125rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.intro {
+    font-weight: bold;
+    color: white;
+    font-size: 1.14rem;
+}
+
+.imageWrapper {
+    position: relative;
+    padding-bottom: 50%;
+}
+
+.mainImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 2;
+    transition: transform .2s;
+}
+
+.imageTitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.625rem 1.5rem;
+    background: rgba(0,0,0,.5);
+    color: white;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.imageBackgroundWrapper {
+    overflow: hidden;
+    z-index: 1;
+}
+
+.imageBackgroundWrapper,
+.imageBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.imageBackground {
+    background: center center no-repeat;
+    filter: blur(0.625rem);
+    transition: transform .3s;
+    background-size: cover;
+}
+
+.imageWrapper:hover .mainImage{
+    transform: scale(1.05);
+}
+
+.imageWrapper:hover .imageBackground {
+    transform: scale(1.25);
+}
+
+.body {
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.body p {
+    margin: 2.5rem 0;
+}
+
+.tags {
+    display: flex;
+    gap: 1rem;
+}
+
+.tag {
+    background-color: #ff57a2;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}

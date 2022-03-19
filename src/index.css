@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'twn', sans-serif;
+}
+
+html {
+  margin: 0;
+}
+
+body,
+html {
+  background-color: #3a3d57;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --menuWidth: 220px;
+  --maxWidth: 1000px;
+}
+
+@font-face {
+  font-family: 'twn';
+  src: url('./assets/fonts/BoosterNextFY-Regular.woff') format('woff'),
+    url('./assets/fonts/BoosterNextFY-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'twn';
+  src: url('./assets/fonts/BoosterNextFY-Bold.woff') format('woff'),
+    url('./assets/fonts/BoosterNextFY-Bold.woff2') format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'twn medium';
+  src: url('./assets/fonts/BoosterNextFY-Medium.woff') format('woff'),
+    url('./assets/fonts/BoosterNextFY-Medium.woff2') format('woff2');
+}
