@@ -6,9 +6,9 @@ import { ReactComponent as MenuCloseSvg} from './../../assets/graphics/times.svg
 function Header({ menuOpen, handleMenuChange }) {
     const renderButton = () => {
         return menuOpen ?
-            <MenuOpenSvg className={styles.hamburger} aria-label='Toggle menu'/>
-            :
             <MenuCloseSvg className={styles.xmark} aria-label='Toggle menu'/>
+            :
+            <MenuOpenSvg className={styles.hamburger} aria-label='Toggle menu'/>
     }
     return (
         <div className={styles.header}>
