@@ -45,15 +45,18 @@
     width: 1rem;
     margin-left: 1rem;
     transition: transform 250ms;
+    fill: rgb(58, 61, 87);
 }
 
 .tableSvg {
     transform: scale(1.2);
+    fill: rgb(58, 61, 87);
 }
 
 .imageSvg {
     height: 1rem;
     transform: scale(1.4);
+    fill: rgb(58, 61, 87);
 }
 
 .active,
